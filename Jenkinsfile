@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-            registry = "RLin8103/calculator"
+            registry = "rlin8103/calculator"
             registryCredential = 'dockerhub'
             dockerImage=''
     }
@@ -50,7 +50,7 @@ pipeline {
         stage ('Building image') {
             steps {
                 script {
-                    dockerImage = docker.build "calculator:$BUILD_NUMBER"
+                    dockerImage = docker.build registry + ":$BUILD_NUMBER"
                 }
             }
         }
