@@ -22,8 +22,10 @@ public class Main {
 		while (scanner.hasNext()) {
 			operation = scanner.next();
 			inputOne = scanner.nextInt();
-			inputTwo = scanner.nextInt();
 
+			if (!operation.equals("fibonacci") && !operation.equals("binary")) {
+				inputTwo = scanner.nextInt();
+			}
 
 			Calculator calculator = new Calculator();
 
