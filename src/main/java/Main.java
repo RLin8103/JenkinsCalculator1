@@ -11,7 +11,7 @@ public class Main {
 	 * Give the dictionary file name as the first argument and the word to correct
 	 * as the second argument.
 	 */
-	public static void main() throws IOException {
+	public static void main(String[] args) throws IOException {
 
 		Scanner scanner = new Scanner(System.in);
 
