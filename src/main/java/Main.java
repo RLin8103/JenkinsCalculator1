@@ -29,27 +29,27 @@ public class Main {
 
 		if (operation.equals("add")) {
 
-			System.out.println(calculator.add(Integer.getInteger(inputOne), Integer.getInteger(inputTwo)));
+			System.out.println(calculator.add(inputOne, inputTwo));
 
 		} else if (operation.equals("subtract")) {
 
-			System.out.println(calculator.subtract(Integer.valueOf(inputOne), Integer.valueOf(inputTwo)));
+			System.out.println(calculator.subtract(inputOne, inputTwo));
 
 		} else if (operation.equals("multiply")) {
 
-			System.out.println(calculator.multiply(Integer.valueOf(inputOne), Integer.valueOf(inputTwo)));
+			System.out.println(calculator.multiply(inputOne, inputTwo));
 
 		} else if (operation.equals("divide")) {
 
-			System.out.println(calculator.divide(Integer.valueOf(inputOne), Integer.valueOf(inputTwo)));
+			System.out.println(calculator.divide(inputOne, inputTwo));
 
 		} else if (operation.equals("fibonacci")) {
 
-			System.out.println(calculator.fibonacciNumberFinder(Integer.valueOf(inputOne)));
+			System.out.println(calculator.fibonacciNumberFinder(inputOne));
 
 		} else if (operation.equals("binary")) {
 
-			System.out.println(calculator.intToBinaryNumber(Integer.getInteger(inputOne)));
+			System.out.println(calculator.intToBinaryNumber(inputOne));
 
 		}
 
